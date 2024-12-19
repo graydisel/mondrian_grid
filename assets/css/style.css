@@ -172,13 +172,42 @@ template{
   background-color:black;
 }
 
+.firow_first__col{
+  background-color:#ffdd02;
+}
+
+.firow_fourth__col{
+  background-color:#1100a8;
+}
+
+.firow_fifth__col{
+  background-color:red;
+}
+
+.sirow_third__col{
+  background-color:black;
+}
+
+body{
+  background-image:url(../images/back.jpg);
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center center;
+  background-size:cover;
+}
+
+h1{
+  text-align:center;
+}
+
 [class*=__col]{
-  border:1px solid black;
+  border:3px solid black;
 }
 
 .table{
-  height:100vh;
-  width:100%;
+  height:480px;
+  width:480px;
+  margin-inline:auto;
 }
 
 .frow_first__col{
@@ -217,20 +246,12 @@ template{
   grid-area:throw_first__col;
 }
 
-.throw_second__col{
-  grid-area:throw_second__col;
-}
-
 .throw_third__col{
   grid-area:throw_third__col;
 }
 
 .throw_fourth__col{
   grid-area:throw_fourth__col;
-}
-
-.forow_first__col{
-  grid-area:forow_first__col;
 }
 
 .forow_second__col{
@@ -245,16 +266,8 @@ template{
   grid-area:forow_fourth__col;
 }
 
-.forow_fifth__col{
-  grid-area:forow_fifth__col;
-}
-
 .firow_first__col{
   grid-area:firow_first__col;
-}
-
-.firow_second__col{
-  grid-area:firow_second__col;
 }
 
 .firow_third__col{
@@ -269,10 +282,6 @@ template{
   grid-area:firow_fifth__col;
 }
 
-.sirow_first__col{
-  grid-area:sirow_first__col;
-}
-
 .sirow_second__col{
   grid-area:sirow_second__col;
 }
@@ -281,35 +290,15 @@ template{
   grid-area:sirow_third__col;
 }
 
-.sirow_fourth__col{
-  grid-area:sirow_fourth__col;
-}
-
-.sirow_fifth__col{
-  grid-area:sirow_fifth__col;
-}
-
-.sevrow_first__col{
-  grid-area:sevrow_first__col;
-}
-
-.sevrow_second__col{
-  grid-area:sevrow_second__col;
-}
-
 .sevrow_third__col{
   grid-area:sevrow_third__col;
 }
 
-.sevrow_fourth__col{
-  grid-area:sevrow_fourth__col;
-}
-
-.sevrow_fifth__col{
-  grid-area:sevrow_fifth__col;
-}
-
 .table{
+  border:3px solid black;
+  background-color:white;
   display:grid;
-  grid-template-areas:"frow_first__col frow_first__col frow_second__col frow_second__col frow_second__col frow_third__col frow_third__col frow_fourth__col" "srow_first__col srow_second__col srow_second__col srow_second__col srow_second__col srow_third__col srow_third__col frow_fourth__col" "throw_first__col throw_second__col throw_second__col throw_second__col throw_second__col throw_third__col throw_fourth__col frow_fourth__col" "throw_first__col forow_second__col forow_second__col forow_third__col forow_third__col forow_fourth__col forow_fourth__col frow_fourth__col" "firow_first__col forow_second__col forow_second__col firow_third__col firow_third__col firow_fourth__col firow_fourth__col firow_fifth__col" "firow_first__col sirow_second__col sirow_second__col sirow_third__col sirow_third__col sirow_fourth__col sirow_fourth__col firow_fifth__col" "firow_first__col sirow_second__col sirow_second__col sevrow_third__col sevrow_third__col sevrow_third__col sevrow_third__col firow_fifth__col";
+  grid-template-areas:"frow_first__col frow_first__col frow_second__col frow_second__col frow_second__col frow_third__col frow_third__col frow_fourth__col" "srow_first__col srow_second__col srow_second__col srow_second__col srow_second__col srow_third__col srow_third__col frow_fourth__col" "throw_first__col srow_second__col srow_second__col srow_second__col srow_second__col throw_third__col throw_fourth__col frow_fourth__col" "throw_first__col forow_second__col forow_second__col forow_third__col forow_third__col forow_fourth__col forow_fourth__col frow_fourth__col" "firow_first__col forow_second__col forow_second__col firow_third__col firow_third__col firow_fourth__col firow_fourth__col firow_fifth__col" "firow_first__col sirow_second__col sirow_second__col sirow_third__col sirow_third__col firow_fourth__col firow_fourth__col firow_fifth__col" "firow_first__col sirow_second__col sirow_second__col sevrow_third__col sevrow_third__col sevrow_third__col sevrow_third__col firow_fifth__col";
+  grid-template-rows:50px 130px 130px 60px 60px 25px 25px;
+  grid-template-columns:45px 65px 65px 65px 65px 75px 75px 25px;
 }
